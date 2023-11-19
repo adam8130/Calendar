@@ -100,7 +100,7 @@ export function Todolist() {
 
     const todolistArray = [
       ...filteredTodosArray,
-      ...Array.from({ length: 7 - filteredTodosArray.length}, (_, idx) => ({ 
+      ...Array.from({ length: 6 - filteredTodosArray.length}, (_, idx) => ({ 
         title: '還沒有待辦', 
         checked: false, 
         disabled: true,
