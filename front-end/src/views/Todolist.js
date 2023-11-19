@@ -24,7 +24,7 @@ const Root = styled.div`
 `
 const Todobar = styled.div`
   width: 100%;
-  height: calc(100% - 300px);
+  height: calc(100% - 40%);
   h2 {
     margin-top: 20px;
     text-align: center;
@@ -193,7 +193,7 @@ export function Todolist() {
           toolbar: Header,
           dateCellWrapper: DateCell
         }}
-        style={{ width: '95%', height: 300 }}
+        style={{ width: '95%', height: '40%' }}
         popup
       />
     </Root>
