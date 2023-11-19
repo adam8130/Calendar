@@ -5,6 +5,6 @@
     "moment": "^2.29.4"
   },
   "scripts": {
-    "start": "pm2 start index.js --name CalendarHost --ignore-watch='static/schedule.json'"
+    "start": "pm2 start index.js --name CalendarHost"
   }
 }

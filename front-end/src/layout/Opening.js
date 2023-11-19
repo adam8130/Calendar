@@ -5,7 +5,7 @@ import { useStore } from '../zustand/store'
 
 const Root = styled.div`
   width: 100%;
-  height: calc(100vh - 108px);
+  height: calc(100vh - 100px);
   background: rgb(204, 190, 181);
   display: flex;
   justify-content: center;

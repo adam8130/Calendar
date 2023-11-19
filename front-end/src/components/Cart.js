@@ -34,7 +34,7 @@ const Root = styled.div`
     position: absolute;
     top: 12%;
     left: -3%;
-    transform: rotate(10deg);
+    transform: rotate(-90deg);
   }
   .CartSection3 {
     width: 55%;
