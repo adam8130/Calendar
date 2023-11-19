@@ -24,7 +24,7 @@ const Root = styled.div`
 `
 const Todobar = styled.div`
   width: 100%;
-  height: 60%;
+  height: calc(100% - 300px);
   h2 {
     margin-top: 20px;
     text-align: center;
@@ -32,7 +32,7 @@ const Todobar = styled.div`
   }
   section {
     width: 90%;
-    height: calc(100% - 300px);
+    height: 100%;
     margin: 30px auto 0 auto;
     display: flex;
     flex-direction: column;
@@ -100,7 +100,7 @@ export function Todolist() {
 
     const todolistArray = [
       ...filteredTodosArray,
-      ...Array.from({ length: 8 - filteredTodosArray.length}, (_, idx) => ({ 
+      ...Array.from({ length: 7 - filteredTodosArray.length}, (_, idx) => ({ 
         title: '還沒有待辦', 
         checked: false, 
         disabled: true,
