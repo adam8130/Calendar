@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1111,
+    "title": "NANA的衣服",
+    "style": {
+      "position": "absolute",
+      "top": "20.11%",
+      "left": "14.68%",
+      "background": "#CDBEB5",
+      "borderRadius": "5px"
+    }
+  },
+  {
+    "id": "1700404895393",
+    "title": "Iphone15",
+    "style": {
+      "position": "absolute",
+      "top": "51.45%",
+      "left": "12.06%",
+      "transform": "",
+      "background": "#A8A0C8",
+      "borderRadius": "5px"
+    }
+  }
+]

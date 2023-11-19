@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.rbc-month-view {
+  background: rgb(239, 223, 223);
+  border: none;
+}
+.rbc-header {
+  background: rgb(128, 97, 82);
+  color: white;
+  padding: 5px 0;
+  font-weight: 300;
+}
+.rbc-event {
+  font-size: 10px;
+  padding: 1px 1px 1px 2px;
+}
+.rbc-row-segment {
+  padding: 0
+}
