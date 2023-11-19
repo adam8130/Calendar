@@ -9,7 +9,7 @@ const Root = styled.div`
   width: 100%;
   margin-top: auto;
   padding: 5px 5px;
-  padding-bottom: 80px;
+  padding-bottom: 96px;
   background: #9F715D;
   display: flex;
   justify-content: space-around;

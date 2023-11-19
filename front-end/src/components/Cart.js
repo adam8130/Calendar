@@ -30,7 +30,7 @@ const Root = styled.div`
     transform: rotate(-20deg)
   }
   .CartSection2 {
-    width: 50%;
+    width: 40%;
     position: absolute;
     top: 12%;
     left: -3%;
