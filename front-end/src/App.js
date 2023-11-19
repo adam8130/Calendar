@@ -38,39 +38,33 @@ export default function App() {
 
   useEffect(() => {
     setAudioRef(audioRef)
-    const FETCH_URL = process.env.NODE_ENV === 'development' 
-      ? process.env.REACT_APP_FETCH_LOCALHOST 
+    const FETCH_URL = process.env.NODE_ENV === 'development'
+      ? process.env.REACT_APP_FETCH_LOCALHOST
       : process.env.REACT_APP_FETCH_URL
-      SET_FETCH_URL(FETCH_URL)
+    SET_FETCH_URL(FETCH_URL)
   }, [setAudioRef, SET_FETCH_URL])
 
   return (
     <Root>
       {activeTab !== 0 && <Header />}
-      {
-        useOpening && !isOpeningEnd ? (
-          <Opening />
-        ) : (
-          <Container
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            {activeTab === 0 && (
-              <>
-                <FullCalendar />
-                <DetailWrapper />  
-              </>
-            )}
-            {activeTab === 1 && (
-              <Todolist />
-            )}
-            {activeTab === 2 && (
-              <Cart />
-            )}
-          </Container>
-        )
-      }
+      <Container
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        {activeTab === 0 && (
+          <>
+            <FullCalendar />
+            <DetailWrapper />
+          </>
+        )}
+        {activeTab === 1 && (
+          <Todolist />
+        )}
+        {activeTab === 2 && (
+          <Cart />
+        )}
+      </Container>
       {
         isEventPanelOpen && (
           <AddEventPanel />
@@ -83,6 +77,8 @@ export default function App() {
       }
       <audio ref={audioRef} src=""></audio>
       <Footer />
+      {useOpening && !isOpeningEnd && <Opening />}
+
     </Root>
   );
 }

@@ -5,12 +5,16 @@ import { useStore } from '../zustand/store'
 
 const Root = styled.div`
   width: 100%;
-  height: calc(100vh - 90px);
+  height: calc(100vh);
   background: rgb(204, 190, 181);
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
   div {
     color: rgb(230, 225, 221)
   }

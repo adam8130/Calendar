@@ -26,7 +26,7 @@ export const useStore = create((set) => ({
   selectedDay: new Date().toDateString(),
   setSelectedDay: (date) => set({ selectedDay: date }),
 
-  useOpening: false,
+  useOpening: true,
   setUseOpening: () => set({ useOpening: false }),
 
   isOpeningEnd: false,
